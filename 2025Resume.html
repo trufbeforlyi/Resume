@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>John Doe - Virtual Resume</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KiF7ofbQZb7UHU5Gk/SxbQ8NT2+fJvQmIiUdj1y+3p1hKU6" crossorigin="anonymous">
+  <style>
+    :root {
+      --primary-color: #0066cc;
+      --bg-color: #f8f9fa;
+      --text-color: #333;
+      --heading-color: #222;
+      --font-family: 'Montserrat', sans-serif;
+    }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:var(--bg-color); color:var(--text-color); font-family:var(--font-family); line-height:1.6; }
+    header { background:#fff; padding:1rem 2rem; box-shadow:0 2px 4px rgba(0,0,0,0.1); position:sticky; top:0; z-index:1000; }
+    nav { display:flex; justify-content:space-between; align-items:center; }
+    nav .logo { font-size:1.5rem; font-weight:700; color:var(--primary-color); text-decoration:none; }
+    nav ul { list-style:none; display:flex; }
+    nav ul li { margin-left:1.5rem; }
+    nav ul li a { text-decoration:none; color:var(--text-color); font-weight:500; }
+    section { padding:4rem 2rem; max-width:1000px; margin:0 auto; }
+    .hero { text-align:center; padding-top:6rem; padding-bottom:4rem; background:url('hero-bg.jpg') center/cover no-repeat; color:#fff; position:relative; }
+    .hero::before { content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.5); }
+    .hero .content { position:relative; z-index:1; }
+    .hero h1 { font-size:3rem; margin-bottom:0.5rem; }
+    .hero p { font-size:1.25rem; margin-bottom:1.5rem; }
+    .btn { display:inline-block; padding:0.75rem 1.5rem; background:var(--primary-color); color:#fff; border:none; border-radius:4px; text-decoration:none; transition:background 0.3s; }
+    .btn:hover { background:#005bb5; }
+    h2 { font-size:2rem; color:var(--heading-color); margin-bottom:1rem; text-align:center; }
+    .about p { max-width:700px; margin:0 auto; }
+    .experience .item, .projects .item { margin-bottom:2rem; }
+    .item h3 { font-size:1.25rem; color:var(--primary-color); }
+    .item span { font-size:0.9rem; color:#666; }
+    .skills { display:flex; flex-wrap:wrap; justify-content:center; }
+    .skills .skill { background:#fff; padding:0.75rem 1rem; margin:0.5rem; border-radius:4px; box-shadow:0 1px 3px rgba(0,0,0,0.1); }
+    footer { background:#fff; padding:2rem; text-align:center; }
+    footer a { color:var(--text-color); margin:0 0.5rem; text-decoration:none; }
+    @media(max-width:768px) {
+      nav ul { display:none; }
+      /* Consider adding a hamburger menu for mobile */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="#" class="logo">John Doe</a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="content">
+      <h1>John Doe</h1>
+      <p>Software Engineer | Tech Enthusiast | Problem Solver</p>
+      <a href="#contact" class="btn">Get In Touch</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>Passionate software engineer with X years of experience building scalable web applications and leading cross-functional teams.</p>
+  </section>
+
+  <section id="experience" class="experience">
+    <h2>Experience</h2>
+    <div class="item">
+      <h3>Senior Developer at XYZ Corp</h3>
+      <span>Jan 2021 - Present</span>
+      <p>Led a team of developers to architect and deliver cloud-native solutions, improving performance by 30%.</p>
+    </div>
+    <!-- Add more experience items as needed -->
+  </section>
+
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="item">
+      <h3>Project One</h3>
+      <p>Brief description of project one. <a href="#">View on GitHub</a></p>
+    </div>
+    <!-- Add more project items as needed -->
+  </section>
+
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+    <div class="skill">JavaScript</div>
+    <div class="skill">React</div>
+    <div class="skill">Node.js</div>
+    <div class="skill">CSS &amp; HTML5</div>
+    <!-- Add more skills as needed -->
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 John Doe. All rights reserved.</p>
+    <div class="socials">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <!-- Add more social icons as needed -->
+    </div>
+  </footer>
+</body>
+</html>
